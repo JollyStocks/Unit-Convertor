@@ -90,5 +90,5 @@ dispbx_output.bind("<KeyRelease>", length_conversion)
 from_combo.bind("<<ComboboxSelected>>", length_conversion)
 to_combo.bind("<<ComboboxSelected>>", length_conversion)
 
-# Start the main loop
+
 window.mainloop()
