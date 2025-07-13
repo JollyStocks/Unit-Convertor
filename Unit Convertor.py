@@ -3,9 +3,13 @@ from tkinter import ttk
 
 def length_conversion(event=None):
     conversion_factors = {
-        "Picometer [pm]": 1e-12, "Nanometer [nm]": 1e-9, "Micrometer [μm]": 1e-6,
-        "Millimeters [mm]": 1e-3, "Centimeters [cm]": 1e-2,
-        "Meters [m]": 1, "Kilometers [km]": 1e3
+        "Picometer [pm]": 1e-12, 
+        "Nanometer [nm]": 1e-9, 
+        "Micrometer [μm]": 1e-6,
+        "Millimeters [mm]": 1e-3, 
+        "Centimeters [cm]": 1e-2,
+        "Meters [m]": 1, 
+        "Kilometers [km]": 1e3
     }
 
     try:
@@ -33,7 +37,7 @@ def length_conversion(event=None):
     except Exception:
         pass
 
-# Set up main window
+
 window = tk.Tk()
 window.title("Unit Converter")
 window.geometry("700x410")
@@ -58,7 +62,7 @@ header.grid(row=0, column=0, pady=4)
 length_frame = tk.Frame(window, bg="#f4f4f4")
 length_frame.grid(row=3, column=0, columnspan=2, rowspan=4, padx=190, sticky="w")
 
-# Length widgets
+
 from_lbl = ttk.Label(length_frame, text="From")
 from_lbl.grid(row=0, column=0, sticky="w")
 
@@ -79,7 +83,7 @@ to_combo = ttk.Combobox(length_frame, values=length_options, width=20, state="re
 to_combo.set("Select a unit")
 to_combo.grid(row=9, column=1)
 
-# Radio button
+
 length_radiobutton = ttk.Radiobutton(window, text="Length",
                                      variable=length_selected_category, value="Length")
 length_radiobutton.grid(row=1, column=0, padx=10, pady=10, sticky="w")
