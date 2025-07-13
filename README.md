@@ -12,15 +12,19 @@ This desktop application built using Python and Tkinter that allows users to con
    Click the dropdown to pick the unit you want to convert from — like meters or kilometers.
 
 5. Type the number to convert
+6. 
    Type the value into the top input box. For example, type 1000.
 
-6. Choose your “To” unit
+7. Choose your “To” unit
+8. 
    Scroll down a bit. There’s another dropdown for the unit you want to convert to. Pick something like centimeters or micrometers.
 
-7. See the result instantly
+9. See the result instantly
+10. 
    Once both units are selected and you typed in a number, the result will show up automatically in the second box below.
 
-8. You can also convert the other way around
+11. You can also convert the other way around
+12. 
    If you type in the bottom box instead, the top box will convert based on that. So it works both ways.
 
 
